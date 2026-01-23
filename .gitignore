@@ -1,0 +1,13 @@
+# Generated vibe folders in user projects are meant to be committed
+# This .gitignore is for the plugin source itself
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

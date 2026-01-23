@@ -1,0 +1,10 @@
+{
+  "name": "claude-code-framework",
+  "description": "Structured workflows for Claude Code. Understand codebases, track decisions, catch risks.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jack Lutz",
+    "url": "https://github.com/jwlutz"
+  },
+  "repository": "https://github.com/jwlutz/claude_code_framework"
+}
