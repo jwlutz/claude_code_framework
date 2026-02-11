@@ -4,7 +4,11 @@
   "version": "1.2.0",
   "author": {
     "name": "Jack Lutz",
+    "email": "jack@jwlutz.com",
     "url": "https://github.com/jwlutz"
   },
-  "repository": "https://github.com/jwlutz/claude_code_framework"
+  "repository": "https://github.com/jwlutz/claude_code_framework",
+  "homepage": "https://github.com/jwlutz/claude_code_framework",
+  "license": "MIT",
+  "keywords": ["workflow", "codebase-understanding", "risk-scanning", "tdd", "decision-tracking"]
 }

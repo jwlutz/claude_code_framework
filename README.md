@@ -16,11 +16,43 @@ Claude Code Framework adds **discipline** to AI-assisted development. It creates
 
 ## Installation
 
+Add the marketplace and install the plugin:
+
 ```bash
-claude plugin add https://github.com/jwlutz/claude_code_framework
+# Add the marketplace
+/plugin marketplace add jwlutz/claude_code_framework
+
+# Install the vibe plugin
+/plugin install vibe@vibe-marketplace
+```
+
+Or from the CLI:
+
+```bash
+claude plugin install vibe@vibe-marketplace
 ```
 
 That's it. The commands are now available in any project.
+
+### Team Installation
+
+Add this to your project's `.claude/settings.json` to auto-prompt teammates:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "vibe-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "jwlutz/claude_code_framework"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "vibe@vibe-marketplace": true
+  }
+}
+```
 
 ## Quick Start
 

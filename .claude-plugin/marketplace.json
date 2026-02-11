@@ -1,10 +1,13 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "vibe-marketplace",
   "description": "Structured workflows for Claude Code. Understand codebases, track decisions, catch risks.",
   "owner": {
     "name": "Jack Lutz",
     "email": "jack@jwlutz.com"
+  },
+  "metadata": {
+    "description": "Structured workflows for Claude Code inspired by Boris Cherny's methodology. Persistent codebase understanding, decision tracking, risk scanning, and disciplined development workflows.",
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -16,7 +19,11 @@
         "name": "Jack Lutz",
         "email": "jack@jwlutz.com"
       },
-      "category": "productivity"
+      "repository": "https://github.com/jwlutz/claude_code_framework",
+      "license": "MIT",
+      "keywords": ["workflow", "codebase-understanding", "risk-scanning", "tdd", "decision-tracking"],
+      "category": "productivity",
+      "tags": ["development", "productivity", "code-quality"]
     }
   ]
 }
