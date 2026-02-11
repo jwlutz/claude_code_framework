@@ -13,4 +13,4 @@ Answer questions about this codebase using the understanding from `.vibe/underst
 
 ## If no .vibe/ exists
 
-Say: "No understanding found. Run /vibe-init first."
+Say: "No understanding found. Run /vibe:init first."

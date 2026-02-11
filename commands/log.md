@@ -9,4 +9,4 @@ Decision History
 [For each decision, show date, task, what was decided, and why]
 
 If no decisions file exists:
-No decisions recorded yet. Decisions are captured when you use /vibe-work.
+No decisions recorded yet. Decisions are captured when you use /vibe:go.

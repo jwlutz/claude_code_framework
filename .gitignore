@@ -11,3 +11,6 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+
+# Temp files
+temp_*.json

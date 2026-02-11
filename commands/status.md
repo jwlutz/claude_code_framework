@@ -17,5 +17,5 @@ If `.vibe/understanding.md` exists:
 If not:
 ```
 ✗ No vibe understanding found
-  Run /vibe-init to analyze this codebase
+  Run /vibe:init to analyze this codebase
 ```

@@ -7,4 +7,4 @@ When answering questions about this codebase, first check if `.vibe/understandin
 
 If it exists, read it for context before answering.
 
-If it doesn't exist, suggest running `/vibe-init`.
+If it doesn't exist, suggest running `/vibe:init`.

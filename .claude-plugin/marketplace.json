@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "vibe-marketplace",
+  "description": "Structured workflows for Claude Code. Understand codebases, track decisions, catch risks.",
+  "owner": {
+    "name": "Jack Lutz",
+    "email": "jack@jwlutz.com"
+  },
+  "plugins": [
+    {
+      "name": "vibe",
+      "source": "./",
+      "description": "Structured workflows for Claude Code. Understand codebases, track decisions, catch risks.",
+      "version": "1.2.0",
+      "author": {
+        "name": "Jack Lutz",
+        "email": "jack@jwlutz.com"
+      },
+      "category": "productivity"
+    }
+  ]
+}
