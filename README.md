@@ -81,6 +81,8 @@ claude
 | `/vibe:ask <question>` | Ask questions using stored context |
 | `/vibe:go <task>` | Full workflow: explore, plan, implement, review, test |
 | `/vibe:tdd <task>` | Test-driven development: write tests first, then implement |
+| `/vibe:review` | Adversarial review + Playwright verification + code simplification |
+| `/vibe:oneshot` | End-to-end: clarify intent, implement, review, and present |
 | `/vibe:commit` | Smart commit, push, and optionally create a PR |
 | `/vibe:learn <lesson>` | Record a learning for future sessions |
 | `/vibe:status` | Check if understanding exists and its state |
@@ -105,30 +107,28 @@ After running `/vibe:init`, a `.vibe/` folder appears in your project:
 
 ## The `/vibe:go` Workflow
 
-When you run `/vibe:go <task>`, the framework enforces this process:
+When you run `/vibe:go <task>`, the framework orchestrates specialized subagents:
 
-1. **Pre-compute** - Inline bash gathers git status, test runner, and existing context
-2. **Understand** - Read existing context, explore relevant code
-3. **Plan** - Present options with tradeoffs, define success criteria, wait for approval
-4. **Implement** - Make changes following project patterns
-5. **Review** - Self-check for bugs and style issues
-6. **Risk Check** - Scan for new issues introduced
-7. **Test** - Run the test suite, iterate until passing
-8. **Verify** - Check success criteria are met
-9. **Complete** - Record decisions, update context
+1. **Pre-compute** — Inline bash gathers git status, test runner, and existing context
+2. **Understand** — Explorer subagent analyzes relevant code, reads project context, looks up library docs
+3. **Plan** — Main conversation presents options with tradeoffs, defines success criteria, waits for approval
+4. **Implement** — Engineer subagent makes changes following project patterns, verifying APIs via docs
+5. **Review + Test** — Reviewer and tester subagents run **in parallel**: adversarial code review + test suite
+6. **Risk Check** — Main conversation compares risks baseline
+7. **Verify & Complete** — Main conversation checks success criteria, records decisions
 
-No code is written until you approve the plan.
+No code is written until you approve the plan. Subagents research before acting — they look up docs, not guess.
 
 ## The `/vibe:tdd` Workflow
 
-Test-driven development following Boris Cherny's approach:
+Test-driven development with subagent orchestration:
 
-1. **Understand** - What are we building?
-2. **Write Tests** - Define desired behavior as tests (don't run them yet)
-3. **Commit Tests** - Lock in the test contract
-4. **Implement** - Write minimum code to pass tests (don't edit tests)
-5. **Iterate** - Run tests, fix implementation, repeat until green
-6. **Complete** - Commit the passing implementation
+1. **Understand** — Explorer subagent analyzes the target, finds test patterns
+2. **Write Tests** — Engineer subagent writes tests (looks up test framework API docs)
+3. **Commit Tests** — Main conversation locks in the test contract
+4. **Implement** — Engineer subagent writes minimum code to pass tests
+5. **Iterate** — Tester subagent runs tests, loop until green
+6. **Complete** — Main conversation commits the passing implementation
 
 ## For Consultants
 

@@ -12,6 +12,7 @@ Analyze this codebase and create a `.vibe/understanding.md` file that persists a
    - What language(s) and framework(s)?
    - What are the entry points?
    - How is code organized?
+   - For each framework/library identified, if Context7 is available use it (resolve-library-id then query-docs) to verify your understanding — otherwise use WebSearch or source code
 
 3. **Understand each component**:
    - Read the key files

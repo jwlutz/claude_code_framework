@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:howborisusesclaudecode.com)",
+      "WebFetch(domain:www.threads.com)"
+    ]
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
+}

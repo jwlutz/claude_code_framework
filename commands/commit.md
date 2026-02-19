@@ -26,7 +26,9 @@ echo "=== DIFF ===" && git diff 2>/dev/null && git diff --cached 2>/dev/null
    git add [specific files]
    ```
 
-3. **Draft commit message**: Follow the project's existing commit style (check recent commits above). If no clear style, use conventional commits:
+3. **Draft commit message**: Do NOT add Co-Authored-By lines to commit messages. The user's attribution setting handles this automatically.
+
+   Follow the project's existing commit style (check recent commits above). If no clear style, use conventional commits:
    - `feat:` for new features
    - `fix:` for bug fixes
    - `refactor:` for restructuring
