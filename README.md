@@ -30,7 +30,7 @@ Add to your project's `.claude/settings.json`:
     "vibe-marketplace": {
       "source": {
         "source": "github",
-        "repo": "dukesmith0/vibe-framework"
+        "repo": "jwlutz/claude_code_framework"
       }
     }
   },
